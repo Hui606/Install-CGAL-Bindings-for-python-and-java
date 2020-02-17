@@ -25,5 +25,5 @@ __Note:__ for this line `mkdir build/CGAL-5.0_release -p` is used for create two
 
 The above code is for __Python__ usage. If __Java__, you can just copy the code in that link.
 
-## 3. If missing libraries
+## 3. If Missing Library
 When installing CGAL, you may receive errors tell you what packages are needed, something like `You are missing gmp library`. In my case, four packages: boost, cgal, gmp, mpfr. To handle them, using `brew install <library name>`(e.g. `brew install gmp`)
