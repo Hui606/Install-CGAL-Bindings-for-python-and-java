@@ -1,5 +1,5 @@
 # Install-CGAL-Bindings-for-python
-To introduce ow to install cgal-swig-bindings for python
+To introduce how to install cgal-swig-bindings for python and java
 
 My computer is MacOS with python 3.7
 
