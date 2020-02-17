@@ -8,6 +8,8 @@ To do this, I highly recommend using Homebrew:https://brew.sh/  \
 Firstly, open mac terminal and type in `brew install cgal`. 
 
 ## 2. Install CGAL-bindings
+CGAL is designed for __C++__. To use it in __Python__ or __Java__, we need CGAL-bindings to import CGAL in the programs.\
+
 In this step, using the commands listed in the bottom of this page: https://github.com/CGAL/cgal-swig-bindings/wiki/Installation, but changed a little, which goes
   ```
   git clone https://github.com/cgal/cgal-swig-bindings
