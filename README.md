@@ -3,7 +3,7 @@ To introduce how to install cgal-swig-bindings for python and java
 
 My computer is MacOS with python 3.7
 
-## 1. Install CGAL Liabray
+## 1. Install CGAL liabray
 To do this, I highly recommend using Homebrew:https://brew.sh/  \
 Firstly, open mac terminal and type in `brew install cgal`. 
 
@@ -27,5 +27,28 @@ __Note:__ for this line `mkdir build/CGAL-5.0_release -p` is used for create two
 
 The above code is for __Python__ usage. If __Java__, you can just copy the code in that link.
 
-## 3. If Missing Library
+## 3. If missing library
 When installing CGAL, you may receive errors tell you what packages are needed, something like `You are missing gmp library`. In my case, four packages: boost, cgal, gmp, mpfr. To handle them, using `brew install <library name>`(e.g. `brew install gmp`)
+
+## 4. Customize project path
+If you want to put the CGAL-bindings where rather than default path, here is instruction:
+   - git clone 'link' 'path' (Must ensure the path is "brand new" (non-exist before))\
+   __e.g.__ `git clone https://github.com/cgal/cgal-swig-bindings /Users/mike/Documents/CGAL-Project/cgal-bindings`
+   
+   - enter the folder\
+   `cd /Users/mike/Documents/CGAL-Project/cgal-bindings` 
+   
+   - make 'build' folder and enter it\
+   `mkdir build/CGAL-5.0_release -p`\
+   `cd build/CGAL-5.0_release`
+   
+   - cmake\
+   ```cmake -DCGAL_DIR=/usr/lib/CGAL -DBUILD_JAVA=OFF -DPYTHON_OUTDIR_PREFIX=../../examples/python/mike../..```\
+   **Note:** for `-DPYTHON_OUTDIR_PREFIX=../../examples/python/mike../..` this path is where you put your python file. After this, you will also see a CGAL package in folder `mike`
+   
+   - make\
+   `make -j 4`\
+   Explaination for '-j': Specifies the number of jobs (commands) to run simultaneously. If there is more than one -j option, the last one is effective. If the -j option is given without an argument, make will not limit the number of jobs that can run simultaneously.
+   
+   - you can run your python file in `/Users/mike/Documents/CGAL-Project/cgal-bindings/examples/python/mike`
+   
