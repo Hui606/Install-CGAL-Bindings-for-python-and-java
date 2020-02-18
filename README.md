@@ -1,5 +1,5 @@
-# Install-CGAL-Bindings-for-python
-To introduce how to install cgal-swig-bindings for python and java
+# Install-CGAL-Bindings-for-python-and-java
+To introduce how to install cgal-swig-bindings without using `pip install cgal-bindings`
 
 My computer is MacOS with python 3.7
 
@@ -8,7 +8,7 @@ To do this, I highly recommend using Homebrew:https://brew.sh/  \
 Firstly, open mac terminal and type in `brew install cgal`. 
 
 ## 2. Install CGAL-bindings
-CGAL is designed for __C++__. To use it in __Python__ or __Java__, we need CGAL-bindings to import CGAL in the programs.\
+CGAL is designed for __C++__. To use it in __Python__ or __Java__, we need CGAL-bindings to import CGAL in the programs.
 
 In this step, using the commands listed in the bottom of this page: https://github.com/CGAL/cgal-swig-bindings/wiki/Installation, but changed a little, which goes
   ```
@@ -48,7 +48,7 @@ If you want to put the CGAL-bindings where rather than default path, here is ins
    
    - make\
    `make -j 4`\
-   Explaination for '-j': Specifies the number of jobs (commands) to run simultaneously. If there is more than one -j option, the last one is effective. If the -j option is given without an argument, make will not limit the number of jobs that can run simultaneously.
+   Explaination for '-j': Specifies the number of jobs (commands) to run simultaneously. If there is more than one -j option, the last one is effective. If the -j option is given without an argument, make will not limit the number of jobs that can run simultaneously. https://www.tutorialspoint.com/unix_commands/make.htm
    
    - you can run your python file in `/Users/mike/Documents/CGAL-Project/cgal-bindings/examples/python/mike`
    
