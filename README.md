@@ -1,5 +1,5 @@
 # Install-CGAL-Bindings-for-python-and-java
-To introduce how to install cgal-swig-bindings without using `pip install cgal-bindings`
+To introduce how to install cgal-swig-bindings **WITHOUT** using `pip install cgal-bindings`
 
 My computer is MacOS with python 2.7
 
