@@ -16,7 +16,8 @@ In this step, using the commands listed in the bottom of this page: https://gith
   ```
   git clone https://github.com/cgal/cgal-swig-bindings
   cd cgal-swig-bindings
-  mkdir build/CGAL-5.0_release -p
+  mkdir build
+  mkdir build/CGAL-5.0_release
   cd build/CGAL-5.0_release
   cmake -DCGAL_DIR=/usr/lib/CGAL -DBUILD_JAVA=OFF -DPYTHON_OUTDIR_PREFIX=../../examples/python ../..
   make -j 4
@@ -24,8 +25,6 @@ In this step, using the commands listed in the bottom of this page: https://gith
   python test.py
   ... output of the example test.py...`
   ```
-
-__Note:__ for this line `mkdir build/CGAL-5.0_release -p` is used for create two folders: "CGAL-5.0_release" inside "build". But I couldn't create the folders so I create it manually. 
 
 The above code is for __Python__ usage. If __Java__, you can just copy the code in that link.
 
@@ -41,7 +40,7 @@ If you want to put the CGAL-bindings where rather than default path, here is ins
    `cd /Users/mike/Documents/CGAL-Project/cgal-bindings` 
    
    - make 'build' folder and enter it\
-   `mkdir build/CGAL-5.0_release -p`\
+   `mkdir build/CGAL-5.0_release`\
    `cd build/CGAL-5.0_release`
    
    - cmake\
