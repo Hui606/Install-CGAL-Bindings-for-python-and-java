@@ -1,6 +1,8 @@
 # Install-CGAL-Bindings-for-python-and-java
 To introduce how to install cgal-swig-bindings **WITHOUT** using `pip install cgal-bindings`
 
+**PS:** Using `pip install cgal-bindings` to install cgal-bindings will fail to use as the current version of cgal is too new (CGAL 5.0.2) to support the binding from pip. Details in: https://github.com/CGAL/cgal-swig-bindings/issues/153#issuecomment-587064408
+
 My computer is MacOS with python 2.7
 
 ## 1. Install CGAL liabray
