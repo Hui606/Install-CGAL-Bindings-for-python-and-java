@@ -1,12 +1,12 @@
 # Install-CGAL-Bindings-for-python-and-java
 To introduce how to install cgal-swig-bindings **WITHOUT** using `pip install cgal-bindings`
 
-**PS:** Using `pip install cgal-bindings` to install cgal-bindings will fail to use as the current version of cgal is too new (CGAL 5.0.2) to support the binding from pip. Details in: https://github.com/CGAL/cgal-swig-bindings/issues/153#issuecomment-587064408
+**PS:** Using `pip install cgal-bindings` to install cgal-bindings will fail as the current version of cgal is too new (CGAL 5.0.2) to support the binding from pip. Details in: https://github.com/CGAL/cgal-swig-bindings/issues/153#issuecomment-587064408
 
 My computer is MacOS with python 2.7
 
 ## 1. Install CGAL liabray
-To do this, I highly recommend using Homebrew:https://brew.sh/  \
+I highly recommend using Homebrew:https://brew.sh/  \
 Firstly, open mac terminal and type in `brew install cgal`. 
 
 ## 2. Install CGAL-bindings
@@ -26,14 +26,14 @@ In this step, using the commands listed in the bottom of this page: https://gith
   ... output of the example test.py...`
   ```
 
-The above code is for __Python__ usage. If __Java__, you can just copy the code in that link.
+The above code is for __Python__ usage. If __Java__, just copy the code in that link.
 
 ## 3. If missing library
-When installing CGAL, you may receive errors tell you what packages are needed, something like `You are missing gmp library`. In my case, four packages: boost, cgal, gmp, mpfr. To handle them, using `brew install <library name>`(e.g. `brew install gmp`)
+When installing CGAL, you may receive errors indicating what packages are needed, something like `You are missing gmp library`. In my case, four packages: boost, cgal, gmp, mpfr. To handle them, using `brew install <library name>`(e.g. `brew install gmp`)
 
 ## 4. Customize project path
-If you want to put the CGAL-bindings where rather than default path, here is instruction:
-   - git clone 'link' 'path' (Must ensure the path is "brand new" (non-exist before))\
+If you want to put the CGAL-bindings where rather than default path, here it is:
+   - git clone 'link' 'path' (be sure the path is "brand new" (non-exist before))\
    __e.g.__ `git clone https://github.com/cgal/cgal-swig-bindings /Users/mike/Documents/CGAL-Project/cgal-bindings`
    
    - enter the folder\
